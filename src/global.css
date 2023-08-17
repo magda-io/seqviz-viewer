@@ -1,0 +1,43 @@
+body {
+  width: auto !important; /* Firefox will set width as auto */
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+div,
+input,
+label,
+button {
+  font-family: Roboto Mono, Monaco, monospace;
+  font-size: 1.1rem;
+}
+
+h1 {
+  font-family: Roboto Mono, Monaco, monospace;
+}
+
+#root{
+  height: 100vh;
+}
+
+#seqviz-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#seqviewer {
+  /* height is 100% of the viewport height less the header height */
+  height: calc(100% - 64px);
+  width: 100%;
+  margin: 0px;
+  flex: 1 1 0;
+}
